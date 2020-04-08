@@ -25,5 +25,4 @@ Here's a concise overview of all the steps involved -
 
 With EasySSO, you can complete all of this and simply get your hands on the token(s) in less that a minute!
 
-
-
+All you will need do is to direct your users to the URL that is shared with you at the end of deployment, where they can log in using their work or school accounts backed by Azure AD.
