@@ -25,4 +25,6 @@ Here's a concise overview of all the steps involved -
 
 With EasySSO, you can complete all of this and simply get your hands on the token(s) in less that a minute!
 
-All you will need do is to direct your users to the URL that is shared with you at the end of deployment, where they can log in using their work or school accounts backed by Azure AD.
+All you will need do is to direct your users to the URL that is shared with you at the end of deployment, where they can log in using their work or school accounts backed by Azure AD. We also share the code that you can use to validate the tokens, read the claims and perform your own authorization routines as appropriate.
+
+Using the Azure AD portal, you can also enable to receive the Access Token along with ID Token and configure the Service Principal to include optional claims and additional access to users' information - we enable just the read profile permissions to get going.
