@@ -8,7 +8,7 @@ With this project, we want to enable our ISV partners to take the first steps to
 
 Azure AD is the backbone of the Identity and Access Management capabilites on Azure, Office 365 and the Power Platform. Enterprises gain robust identity management, security and access control for internal resources, apps as well as 3rd party SaaS applications. See this [doc](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis) for more information on Azure AD.
 
-Implementing Azure AD Single Sign-On is similar to other OAuth/OpenID Connect developer experience and you can read all about it [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview)
+Implementing Azure AD Single Sign-On is similar to other OAuth/OpenID Connect developer experience and you can read all about it [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview).
 
 With this project, we want to give a headstart to anyone who is looking at doing it for their solutions and projects.
 
