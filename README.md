@@ -1,10 +1,10 @@
-# EasySSO #
+# EasySSO  
 
 Welcome to the EasySSO project!
 
-EasySSO is a project led by Ashish and Sagar to simplify the integration of Azure AD Single Sign-On for solutions running on Azure. We work with the Independent Software Vendor (ISV) partners and it has been our experience that the authentication and authorization mechanism in use vary greatly between one solution to another.
+EasySSO is a project to simplify the integration of [Azure Active Directory](https://docs.microsoft.com/en-in/azure/active-directory/) Single Sign-On for solutions. We work with the Independent Software Vendor (ISV) partners and it has been our experience that the authentication and authorization mechanism in use vary greatly between one solution to another.
 
-With this project, we want to enable our ISV partners to take the first steps toward implementing a full-fledged Azure AD Single Sign-on for their authentication and authorization requirements with minimal effort and little coding.
+With this project, we want to enable everyone to take the first steps toward implementing a full-fledged Azure AD Single Sign-on for their authentication and authorization requirements with **minimal effort**  and background.
 
 Azure AD is the backbone of the Identity and Access Management capabilites on Azure, Office 365 and the Power Platform. Enterprises gain robust identity management, security and access control for internal resources, apps as well as 3rd party SaaS applications. See this [doc](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis) for more information on Azure AD.
 
@@ -12,11 +12,13 @@ Implementing Azure AD Single Sign-On is similar to other OAuth/OpenID Connect de
 
 With this project, we want to give a headstart to anyone who is looking at doing it for their solutions and projects.
 
-At the core of this project is the built-in authentication and authorization support available with Azure App Service. To learn more please visit this [documentation](https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization).
+# How the project is intended to be used 
+
+This project is build on top of authentication and authorization support available with Azure App Service. To learn more please visit this [documentation](https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization).
 
 This feature allows developers to add federated authentication from providers such as Azure Active Directory, Microsoft Accounts, Facebook, Google and Twitter with zero code and we use it to give you a quick path to integrate the same in your applications. You can take a look the guides available from this [link](https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad) to learn how to do it manually but with EasySSO, we have automated this process for you.
 
-Here's a concise overview of all the steps involved -
+Here's an overview of steps involved -
 
 1. Create an Azure App Service instance
 2. Configure this instance to use Azure Active Directory authentication with Express or Advanced configuration
