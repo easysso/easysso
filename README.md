@@ -32,4 +32,4 @@ All you will need do is to direct your users to the URL that is shared with you 
 Using the Azure AD portal, you can also enable to receive the Access Token along with ID Token and configure the Service Principal to include optional claims and additional access to users' information - we enable just the read profile permissions to get going.
 
 In short, this is how it works :
-!(https://github.com/easysso/easysso/blob/master/diagram.png)
+![diagram](https://github.com/easysso/easysso/raw/master/diagram.png)
