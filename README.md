@@ -35,3 +35,6 @@ In short, this is how it works :
 
 
 ![diagram](https://github.com/easysso/easysso/raw/master/diagram.png)
+
+
+#How to Test
