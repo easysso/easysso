@@ -97,6 +97,10 @@ The provisioning script outputs a URL that you can use to redirect your users to
 8. Resource - set to blank
 9. Nonce
 
+You can use copy and paste this URL to test the authentication flow. Once the users have authenticated successfully, they will be redirected to the *success* endpoint provided by the demo web app which only shows the claims that were forwarded to the app.
+
+In production, you will use a URL that is part if your web app to recieve this information. To make it work, you can replace the demo web app URL with a URL from your solution by going to *Azure Active Directory -> App Registrations > App name that you provided > Authentication > Redirect URLs* 
+
 You can log the users out by redirecting them to the following URL -
 ```
 https://login.microsoftonline.com/common/oauth2/v2.0/logout

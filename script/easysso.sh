@@ -29,9 +29,8 @@ else
 		exit
 	fi
 
-	replyUrl1=https://jwt.ms
+	replyUrl1=$(echo $webappUrl)/success
 	replyUrl2=$(echo $appUrl)/.auth/login/aad/callback
-	replyUrl3=$(echo $webappUrl)/success
 
 	#starting execution of steps
 	echo checking connectivity to azure subscription...
@@ -61,7 +60,7 @@ else
 	]
 	}]' >manifest.json
 	echo creating and acquiring service principal id...
-	appId=$(az ad app create --display-name $appName --homepage $appUrl --identifier-uris $appUrl --reply-urls $replyUrl1 $replyUrl2 $replyUrl3 --required-resource-accesses @manifest.json -o tsv --query appId)
+	appId=$(az ad app create --display-name $appName --homepage $appUrl --identifier-uris $appUrl --reply-urls $replyUrl1 $replyUrl2 --required-resource-accesses @manifest.json -o tsv --query appId)
 
 	#creating resources
 	echo creating resource group $rgName...
