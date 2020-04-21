@@ -89,7 +89,7 @@ else
 	echo =========================================================================================
 	echo login URL:
 	echo ==========
-	echo https://login.microsoftonline.com/$tenantId/oauth2/authorize?response_type=id_token\&redirect_uri=$replyUrl3\&client_id=$appId\&scope=openid+profile+email\&response_mode=form_post\&resource=\&nonce=fb57942e3d0f43698c83e4b923b68470_20200406130225
+	echo https://login.microsoftonline.com/$tenantId/oauth2/authorize?response_type=id_token\&redirect_uri=$replyUrl1\&client_id=$appId\&scope=openid+profile+email\&response_mode=form_post\&resource=\&nonce=fb57942e3d0f43698c83e4b923b68470_20200406130225
 
 	echo logout URL:
 	echo ===========
