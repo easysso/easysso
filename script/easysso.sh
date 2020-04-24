@@ -86,12 +86,17 @@ else
 	echo
 	echo
 	echo all set! Please use the following URLs for to initiate Azure AD login and logout flows...
+	echo URLs will also be saved in $(echo $appName)-urls.txt
 	echo =========================================================================================
-	echo login URL:
-	echo ==========
-	echo https://login.microsoftonline.com/$tenantId/oauth2/authorize?response_type=id_token\&redirect_uri=$replyUrl1\&client_id=$appId\&scope=openid+profile+email\&response_mode=form_post\&resource=\&nonce=fb57942e3d0f43698c83e4b923b68470_20200406130225
+	echo login URL: |tee -a $(echo $appName)-urls.txt
+	echo ========== |tee -a $(echo $appName)-urls.txt
+	loginUrl=$(echo https://login.microsoftonline.com/$(echo $tenantId)/oauth2/authorize?response_type=id_token\&redirect_uri=$(echo $replyUrl1)\&client_id=$(echo $appId)\&scope=openid+profile+email\&response_mode=form_post\&resource=\&nonce=fb57942e3d0f43698c83e4b923b68470_20200406130225)
+	echo $loginUrl |tee -a $(echo $appName)-urls.txt
+	echo |tee -a $(echo $appName)-urls.txt
 
-	echo logout URL:
-	echo ===========
-	echo https://login.microsoftonline.com/common/oauth2/v2.0/logout
+	echo logout URLs: |tee -a $(echo $appName)-urls.txt
+	echo =========== |tee -a $(echo $appName)-urls.txt
+	logoutUrl=$(echo https://login.microsoftonline.com/$(echo $tenantId)/oauth2/v2.0/logout)
+	echo $logoutUrl |tee -a $(echo $appName)-urls.txt
+	echo https://login.microsoftonline.com/common/oauth2/v2.0/logout |tee -a $(echo $appName)-urls.txt
 fi
