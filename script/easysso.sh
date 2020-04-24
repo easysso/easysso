@@ -86,7 +86,7 @@ else
 	echo
 	echo
 	echo all set! Please use the following URLs for to initiate Azure AD login and logout flows...
-	echo URLs will also be saved in $(echo $appName)-urls.txt
+	echo saving the URLs in ./$(echo $appName)-urls.txt...
 	echo =========================================================================================
 	echo login URL: |tee -a $(echo $appName)-urls.txt
 	echo ========== |tee -a $(echo $appName)-urls.txt
